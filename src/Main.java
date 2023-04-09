@@ -197,4 +197,5 @@ public class Main {
         //se despliaga la pantalla//
         StdDraw.show();
     }
+
 }

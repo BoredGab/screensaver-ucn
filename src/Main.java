@@ -84,6 +84,8 @@ public class Main {
             x1 += vx;
             y1 += vy;
 
+            //Debido al caracter aleatoria de la velocidad, puede que las lineas se queden atascadas debido a su tamaño//
+
 
             posLineas(x0, y0, x1, y1, lineasX0, lineasY0, lineasX1, lineasY1);
 

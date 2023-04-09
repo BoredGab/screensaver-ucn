@@ -1,6 +1,5 @@
 import edu.princeton.cs.stdlib.StdDraw;
 import java.awt.*;
-
 /**
  * Screensaver con lineas
  * @author Gabriel Véliz Garcés
@@ -45,7 +44,6 @@ public class Main {
         //Se inicia el loop infinito que permitira que el screensaver no se detenga//
         loop(x0, y0, x1, y1, lineasX0, lineasY0, lineasX1, lineasY1, vx, vy, a0, b0);
     }
-
     /**
      * @param x0 coordenada x0 de la primera linea
      * @param y0 coordenada y0 de la primera linea
@@ -99,12 +97,10 @@ public class Main {
 
         }
     }
-
     private static void buffering() {
         //Se ocupa para evitar el parpadeo de la pantalla//
         StdDraw.enableDoubleBuffering();
     }
-
     /**
      * @param min Se define el minimo de la escala del lienzo del dibujo
      * @param max Se define el maximo de la escala del lienzo del dibujo
@@ -114,7 +110,6 @@ public class Main {
         StdDraw.setXscale(min, max);
         StdDraw.setYscale(min, max);
     }
-
     /**
      * @param x0 coordenada x0 de la primera linea
      * @param y0 coordenada y0 de la primera linea
@@ -135,7 +130,6 @@ public class Main {
             lineasY1[i] = y1;
         }
     }
-
     /**
      * @param x0 coordenada x0 de la primera linea
      * @param y0 coordenada y0 de la primera linea
@@ -169,7 +163,6 @@ public class Main {
         lineasX1[4] = x1;
         lineasY1[4] = (y1 - 0.25);
     }
-
     /**
      * @param x0 coordenada x0 de la primera linea
      * @param y0 coordenada y0 de la primera linea
@@ -196,12 +189,10 @@ public class Main {
         StdDraw.setPenColor(Color.green);
         StdDraw.line(lineasX0[4], lineasY0[4], lineasX1[4], lineasY1[4]);
     }
-
     private static void delay() {
         //Se genera un delay de 10 milisegundos entre cada fotograma para que la animacion sea mas facil de ver//
         StdDraw.pause(10);
     }
-
     private static void Pantalla() {
         //se despliaga la pantalla//
         StdDraw.show();
